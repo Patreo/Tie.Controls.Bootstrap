@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08F21F1D-3746-4095-984C-0A22D333CFE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bootstrap.A11y</RootNamespace>
+    <AssemblyName>Bootstrap.A11y</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Bootstrap.A11y.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccordionContentHeaderPanel.cs" />
+    <Compile Include="AccordionContentPanel.cs" />
+    <Compile Include="AccordionControl.cs" />
+    <Compile Include="AccordionPane.cs" />
+    <Compile Include="AccordionPaneCollection.cs" />
+    <Compile Include="Adapters\ButtonAdapter.cs" />
+    <Compile Include="Adapters\GridViewAdapter.cs" />
+    <Compile Include="Adapters\NamespaceDoc.cs" />
+    <Compile Include="Affix.cs" />
+    <Compile Include="Alert.cs" />
+    <Compile Include="Badge.cs" />
+    <Compile Include="CollectionBase.cs" />
+    <Compile Include="Breadcrumbs.cs" />
+    <Compile Include="BreadcrumbsCollection.cs" />
+    <Compile Include="BreadcrumbsItem.cs" />
+    <Compile Include="ButtonGroup.cs" />
+    <Compile Include="Carousel.cs" />
+    <Compile Include="CarouselCollection.cs" />
+    <Compile Include="CarouselItem.cs" />
+    <Compile Include="AccessibleWebControl.cs" />
+    <Compile Include="CheckBox.cs" />
+    <Compile Include="CheckBoxList.cs" />
+    <Compile Include="Dropdown.cs" />
+    <Compile Include="DropdownButton.cs" />
+    <Compile Include="DropDownList.cs" />
+    <Compile Include="Enumerations\AccessibilityPlugins.cs" />
+    <Compile Include="Enumerations\AspectRatios.cs" />
+    <Compile Include="Enumerations\Breakpoints.cs" />
+    <Compile Include="Enumerations\ButtonSizes.cs" />
+    <Compile Include="Enumerations\InputSizes.cs" />
+    <Compile Include="Enumerations\PopoverPositions.cs" />
+    <Compile Include="Enumerations\Triggers.cs" />
+    <Compile Include="FieldSet.cs" />
+    <Compile Include="FormGroup.cs" />
+    <Compile Include="Glyphicon.cs" />
+    <Compile Include="GridView.cs" />
+    <Compile Include="GridViewPager.cs" />
+    <Compile Include="Hamburger.cs" />
+    <Compile Include="Heading.cs" />
+    <Compile Include="Helpers\ControlHelper.cs" />
+    <Compile Include="Helpers\PagingHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\NamespaceDoc.cs" />
+    <Compile Include="HyperLinkButton.cs" />
+    <Compile Include="IListItem.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="Adapters\InputAdapter.cs" />
+    <Compile Include="InputGroup.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="Column.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="Jumbotron.cs" />
+    <Compile Include="ListBox.cs" />
+    <Compile Include="ListGroup.cs" />
+    <Compile Include="ListGroupItem.cs" />
+    <Compile Include="ListGroupItemCollection.cs" />
+    <Compile Include="ListHeader.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="ListItemCollection.cs" />
+    <Compile Include="ListSeparator.cs" />
+    <Compile Include="MediaList.cs" />
+    <Compile Include="MediaObject.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Modal.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="NavBar.cs" />
+    <Compile Include="PageHeader.cs" />
+    <Compile Include="Paginator.cs" />
+    <Compile Include="Panel.cs" />
+    <Compile Include="Popover.cs" />
+    <Compile Include="ProgressBar.cs" />
+    <Compile Include="ProgressBarCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioButton.cs" />
+    <Compile Include="RadioButtonList.cs" />
+    <Compile Include="ResponsiveEmbed.cs" />
+    <Compile Include="Row.cs" />
+    <Compile Include="StackedProgressBars.cs" />
+    <Compile Include="TabCollection.cs" />
+    <Compile Include="TabControl.cs" />
+    <Compile Include="TabPage.cs" />
+    <Compile Include="TextBox.cs" />
+    <Compile Include="TextWebControl.cs" />
+    <Compile Include="ToolTip.cs" />
+    <Compile Include="Well.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\jongund\bootstrap-accessibility.min.css" />
+    <EmbeddedResource Include="Resources\jongund\bootstrap-accessibility.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\paypal\bootstrap-accessibility.min.css" />
+    <Content Include="Resources\paypal\bootstrap-accessibility.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

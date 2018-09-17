@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{520903CD-0424-45B0-B686-B6FF6510333D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bootstrap.A11y.v35</RootNamespace>
+    <AssemblyName>Bootstrap.A11y</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_3_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Bootstrap.A11y.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;_3_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Bootstrap.A11y\AccessibleWebControl.cs">
+      <Link>AccessibleWebControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\AccordionContentHeaderPanel.cs">
+      <Link>AccordionContentHeaderPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\AccordionContentPanel.cs">
+      <Link>AccordionContentPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\AccordionControl.cs">
+      <Link>AccordionControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\AccordionPane.cs">
+      <Link>AccordionPane.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\AccordionPaneCollection.cs">
+      <Link>AccordionPaneCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Adapters\ButtonAdapter.cs">
+      <Link>Adapters\ButtonAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Adapters\GridViewAdapter.cs">
+      <Link>Adapters\GridViewAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Adapters\InputAdapter.cs">
+      <Link>Adapters\InputAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Adapters\NamespaceDoc.cs">
+      <Link>Adapters\NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Affix.cs">
+      <Link>Affix.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Alert.cs">
+      <Link>Alert.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Badge.cs">
+      <Link>Badge.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Breadcrumbs.cs">
+      <Link>Breadcrumbs.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\BreadcrumbsCollection.cs">
+      <Link>BreadcrumbsCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\BreadcrumbsItem.cs">
+      <Link>BreadcrumbsItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Button.cs">
+      <Link>Button.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ButtonGroup.cs">
+      <Link>ButtonGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Carousel.cs">
+      <Link>Carousel.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\CarouselCollection.cs">
+      <Link>CarouselCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\CarouselItem.cs">
+      <Link>CarouselItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\CheckBox.cs">
+      <Link>CheckBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\CheckBoxList.cs">
+      <Link>CheckBoxList.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\CollectionBase.cs">
+      <Link>CollectionBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Column.cs">
+      <Link>Column.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Container.cs">
+      <Link>Container.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Dropdown.cs">
+      <Link>Dropdown.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\DropdownButton.cs">
+      <Link>DropdownButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\DropDownList.cs">
+      <Link>DropDownList.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Enumerations\AccessibilityPlugins.cs">
+      <Link>Enumerations\AccessibilityPlugins.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Enumerations\AspectRatios.cs">
+      <Link>Enumerations\AspectRatios.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Enumerations\Breakpoints.cs">
+      <Link>Enumerations\Breakpoints.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Enumerations\ButtonSizes.cs">
+      <Link>Enumerations\ButtonSizes.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Enumerations\InputSizes.cs">
+      <Link>Enumerations\InputSizes.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Enumerations\PopoverPositions.cs">
+      <Link>Enumerations\PopoverPositions.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Enumerations\Triggers.cs">
+      <Link>Enumerations\Triggers.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\FieldSet.cs">
+      <Link>FieldSet.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\FormGroup.cs">
+      <Link>FormGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Glyphicon.cs">
+      <Link>Glyphicon.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\GridView.cs">
+      <Link>GridView.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\GridViewPager.cs">
+      <Link>GridViewPager.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Hamburger.cs">
+      <Link>Hamburger.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Heading.cs">
+      <Link>Heading.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Helpers\ControlHelper.cs">
+      <Link>Helpers\ControlHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Helpers\NamespaceDoc.cs">
+      <Link>Helpers\NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Helpers\PagingHelper.cs">
+      <Link>Helpers\PagingHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Helpers\StringHelper.cs">
+      <Link>Helpers\StringHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\HyperLinkButton.cs">
+      <Link>HyperLinkButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\IListItem.cs">
+      <Link>IListItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Image.cs">
+      <Link>Image.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\InputGroup.cs">
+      <Link>InputGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Jumbotron.cs">
+      <Link>Jumbotron.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Label.cs">
+      <Link>Label.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListBox.cs">
+      <Link>ListBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListGroup.cs">
+      <Link>ListGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListGroupItem.cs">
+      <Link>ListGroupItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListGroupItemCollection.cs">
+      <Link>ListGroupItemCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListHeader.cs">
+      <Link>ListHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListItem.cs">
+      <Link>ListItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListItemCollection.cs">
+      <Link>ListItemCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ListSeparator.cs">
+      <Link>ListSeparator.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\MediaList.cs">
+      <Link>MediaList.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\MediaObject.cs">
+      <Link>MediaObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Menu.cs">
+      <Link>Menu.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Modal.cs">
+      <Link>Modal.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\NamespaceDoc.cs">
+      <Link>NamespaceDoc.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\NavBar.cs">
+      <Link>NavBar.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\PageHeader.cs">
+      <Link>PageHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Paginator.cs">
+      <Link>Paginator.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Panel.cs">
+      <Link>Panel.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Popover.cs">
+      <Link>Popover.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ProgressBar.cs">
+      <Link>ProgressBar.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ProgressBarCollection.cs">
+      <Link>ProgressBarCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\RadioButton.cs">
+      <Link>RadioButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\RadioButtonList.cs">
+      <Link>RadioButtonList.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ResponsiveEmbed.cs">
+      <Link>ResponsiveEmbed.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Row.cs">
+      <Link>Row.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\StackedProgressBars.cs">
+      <Link>StackedProgressBars.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\TabCollection.cs">
+      <Link>TabCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\TabControl.cs">
+      <Link>TabControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\TabPage.cs">
+      <Link>TabPage.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\TextBox.cs">
+      <Link>TextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\TextWebControl.cs">
+      <Link>TextWebControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\ToolTip.cs">
+      <Link>ToolTip.cs</Link>
+    </Compile>
+    <Compile Include="..\Bootstrap.A11y\Well.cs">
+      <Link>Well.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Bootstrap.A11y\Resources\paypal\bootstrap-accessibility.min.css">
+      <Link>Resources\paypal\bootstrap-accessibility.min.css</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Bootstrap.A11y\Resources\paypal\bootstrap-accessibility.min.js">
+      <Link>Resources\paypal\bootstrap-accessibility.min.js</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Bootstrap.A11y\Resources\jongund\bootstrap-accessibility.min.css">
+      <Link>Resources\jongund\bootstrap-accessibility.min.css</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Bootstrap.A11y\Resources\jongund\bootstrap-accessibility.min.js">
+      <Link>Resources\jongund\bootstrap-accessibility.min.js</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

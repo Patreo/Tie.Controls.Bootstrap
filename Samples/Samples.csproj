@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,21 +59,63 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="components\alerts.aspx" />
+    <Content Include="components\badges.aspx" />
+    <Content Include="components\breadcrumbs.aspx" />
+    <Content Include="components\btn-dropdowns.aspx" />
+    <Content Include="components\btn-groups.aspx" />
+    <Content Include="components\ComponentsContents.ascx" />
+    <Content Include="components\default.aspx" />
+    <Content Include="components\dropdowns.aspx" />
+    <Content Include="components\glyphicons.aspx" />
+    <Content Include="components\input-groups.aspx" />
+    <Content Include="components\jumbotron.aspx" />
+    <Content Include="components\labels.aspx" />
+    <Content Include="components\list-group.aspx" />
+    <Content Include="components\media.aspx" />
+    <Content Include="components\navbar.aspx" />
+    <Content Include="components\pagination.aspx" />
+    <Content Include="components\responsive-embed.aspx" />
+    <Content Include="components\wells.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\docs.css" />
+    <Content Include="css\buttons.aspx" />
+    <Content Include="css\CssContents.ascx" />
+    <Content Include="css\default.aspx" />
+    <Content Include="css\forms.aspx" />
+    <Content Include="css\grid.aspx" />
+    <Content Include="css\images.aspx" />
+    <Content Include="css\tables.aspx" />
+    <Content Include="css\type.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="getting-started.aspx" />
+    <Content Include="javascript\affix.aspx" />
+    <Content Include="javascript\carousel.aspx" />
+    <Content Include="configuration.aspx" />
+    <Content Include="javascript\default.aspx" />
+    <Content Include="javascript\JavaScriptContents.ascx" />
+    <Content Include="components\panels.aspx" />
+    <Content Include="javascript\accordions.aspx" />
+    <Content Include="javascript\modal-remote.html" />
+    <Content Include="javascript\modals.aspx" />
+    <Content Include="javascript\popovers.aspx" />
+    <Content Include="javascript\tabs.aspx" />
+    <Content Include="javascript\tooltips.aspx" />
     <Content Include="packages.config" />
+    <Content Include="App_Browsers\BrowserFile1.browser" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="App_Browsers\BrowserFile1.browser" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="components\progress.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -79,12 +123,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="getting-started.aspx.cs">
-      <DependentUpon>getting-started.aspx</DependentUpon>
+    <Compile Include="css\forms.aspx.cs">
+      <DependentUpon>forms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="getting-started.aspx.designer.cs">
-      <DependentUpon>getting-started.aspx</DependentUpon>
+    <Compile Include="css\forms.aspx.designer.cs">
+      <DependentUpon>forms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="css\tables.aspx.cs">
+      <DependentUpon>tables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="css\tables.aspx.designer.cs">
+      <DependentUpon>tables.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -106,11 +157,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tie.Controls.Bootstrap\Tie.Controls.Bootstrap.csproj">
-      <Project>{08f21f1d-3746-4095-984c-0a22d333cfe5}</Project>
-      <Name>Tie.Controls.Bootstrap</Name>
+    <ProjectReference Include="..\Bootstrap.A11y.v45\Bootstrap.A11y.v45.csproj">
+      <Project>{7dfb3b6c-0e3c-4fc1-8b3e-f3dc1142ef91}</Project>
+      <Name>Bootstrap.A11y.v45</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -136,6 +188,9 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>REM %25SystemRoot%25\Microsoft.NET\Framework\v4.0.30319\msbuild.exe $(ProjectDir)..\Bootstrap.A11y.shfbproj</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

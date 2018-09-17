@@ -6,3 +6,6 @@ packages/
 \.vs/
 
 !packages/repositories.config
+.vs/config/
+.vs/
+Help/Working/

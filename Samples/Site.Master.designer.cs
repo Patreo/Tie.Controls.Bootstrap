@@ -37,7 +37,7 @@ namespace Samples {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Tie.Controls.Bootstrap.NavBar NavBar1;
+        protected global::Bootstrap.A11y.NavBar NavBar1;
         
         /// <summary>
         /// Hamburger1 control.
@@ -46,25 +46,7 @@ namespace Samples {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Tie.Controls.Bootstrap.Hamburger Hamburger1;
-        
-        /// <summary>
-        /// Menu1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Tie.Controls.Bootstrap.Menu Menu1;
-        
-        /// <summary>
-        /// Menu2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Tie.Controls.Bootstrap.Menu Menu2;
+        protected global::Bootstrap.A11y.Hamburger Hamburger1;
         
         /// <summary>
         /// Container1 control.
@@ -73,51 +55,24 @@ namespace Samples {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Tie.Controls.Bootstrap.Container Container1;
+        protected global::Bootstrap.A11y.Container Container1;
         
         /// <summary>
-        /// Row2 control.
+        /// header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Tie.Controls.Bootstrap.Row Row2;
+        protected global::Bootstrap.A11y.PageHeader header;
         
         /// <summary>
-        /// Column2 control.
+        /// MainContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Tie.Controls.Bootstrap.Column Column2;
-        
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
-        /// <summary>
-        /// Column3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Tie.Controls.Bootstrap.Column Column3;
-        
-        /// <summary>
-        /// ContentPlaceHolder2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
     }
 }

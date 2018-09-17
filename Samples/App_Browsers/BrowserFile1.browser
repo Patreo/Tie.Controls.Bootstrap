@@ -5,8 +5,9 @@
 <browsers>
   <browser refID="Default">
     <controlAdapters>
-        <adapter controlType="System.Web.UI.WebControls.TextBox" adapterType="Tie.Controls.Bootstrap.Adapters.InputAdapter, Tie.Controls.Bootstrap" />
-        <adapter controlType="System.Web.UI.WebControls.DropDownList" adapterType="Tie.Controls.Bootstrap.Adapters.InputAdapter, Tie.Controls.Bootstrap" />
+        <adapter controlType="System.Web.UI.WebControls.TextBox" adapterType="Bootstrap.A11y.Adapters.InputAdapter, Bootstrap.A11y" />
+        <adapter controlType="System.Web.UI.WebControls.DropDownList" adapterType="Bootstrap.A11y.Adapters.InputAdapter, Bootstrap.A11y" />
+        <adapter controlType="System.Web.UI.WebControls.ListBox" adapterType="Bootstrap.A11y.Adapters.InputAdapter, Bootstrap.A11y" />
     </controlAdapters>
   </browser>
 </browsers>

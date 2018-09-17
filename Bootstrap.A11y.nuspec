@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Bootstrap.A11y</id>
+        <version>1.1.0</version>
+        <authors>kinzdesign,pmcfernandes</authors>
+        <owners>kinzdesign,pmcfernandes</owners>
+        <licenseUrl>https://raw.githubusercontent.com/wsomweb/Bootstrap.A11y/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/wsomweb/Bootstrap.A11y</projectUrl>
+        <iconUrl>http://getbootstrap.com/apple-touch-icon.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <summary>Accessible WebForms Controls for use with Twitter Bootstrap 3.3</summary>
+        <description>A collection of accessible Twitter Bootstrap v3.3.7 user controls for ASP.NET. It's easy to forget to add ARIA attributes and other accessibility markup. With these controls, it's all handled for you! 
+This project is forked from the Tie.Controls.Bootstrap project by pmcfernandes and features additional controls and accessibility markup. Care has been taken to maintain backwards compatibility, making the transition from Tie.Controls.Bootstrap to Bootstrap.A11y as smooth as possible.</description>
+        <releaseNotes>1.1.0
+- Forked from https://github.com/Patreo/Bootstrap.A11y
+- Added accessibility markup
+- Added additional controls:
+    + CheckBox
+    + CheckBoxList
+    + DropdownButton
+    + DropDownList
+    + FormGroup
+    + Glyphicon
+    + HyperLinkButton
+    + ListBox
+    + ListGroup
+    + RadioButton
+    + RadioButtonList
+    + ResponsiveEmbed
+    + StackedProgressBars
+    + TextBox
+    + ToolTip</releaseNotes>
+        <copyright>Copyright 2018</copyright>
+        <tags>Twitter Bootstrap Accessibility WebForms Framework2 Framework35 Framework4 Framework45 A11y</tags>
+        <dependencies>
+            <dependency id="bootstrap" version="3.3.7" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Bootstrap.A11y\bin\Debug\Bootstrap.A11y.dll" target="lib\net20\Bootstrap.A11y.dll" />
+        <file src="Bootstrap.A11y.v35\bin\Debug\Bootstrap.A11y.dll" target="lib\net35\Bootstrap.A11y.dll" />
+        <file src="Bootstrap.A11y.v40\bin\Debug\Bootstrap.A11y.dll" target="lib\net40\Bootstrap.A11y.dll" />
+        <file src="Bootstrap.A11y.v45\bin\Debug\Bootstrap.A11y.dll" target="lib\net45\Bootstrap.A11y.dll" />
+    </files>
+</package>
